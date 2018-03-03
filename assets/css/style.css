@@ -1,3 +1,4 @@
 body {
-    background-image: url("../images/the_office.jpg")
+    background-image: url("../images/the_office.jpg");
+    background-attachment: fixed;
 }
