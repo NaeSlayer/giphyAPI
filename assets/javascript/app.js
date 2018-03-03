@@ -18,6 +18,17 @@ $(document).ready(function () {
         image.attr("src", imageURL);
     });
 
+    // $(window).on("scroll", function () {
+    //     $.each($(".gifImage"), function (value) {
+    //         if ($(value).scrollTop() < 100) {
+    //             $(value).css("visibility", "hidden");
+
+
+    //         }
+    //         console.log(($(value).scrollTop()));
+    //     })
+    // })
+
     // function gifHover(event) {
     //     var image = $(event.currentTarget);
     //     alert(image.data("animated"));

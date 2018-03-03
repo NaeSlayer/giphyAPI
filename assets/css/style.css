@@ -16,3 +16,15 @@ form,
 input {
     margin: 10px;
 }
+ /* .heading {
+    position: fixed;
+}  */
+
+/* #giphy-view{
+    padding-top: 300px;
+}  */
+
+.topics-view {
+    width: 40%;
+    float: left;
+}
