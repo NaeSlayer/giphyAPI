@@ -1,4 +1,18 @@
 body {
     background-image: url("../images/the_office.jpg");
     background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.btn,
+.submit {
+    border-radius: 5px;
+      box-shadow: 5px 5px 1px 0px;
+}
+
+button, 
+div, 
+form, 
+input {
+    margin: 10px;
 }

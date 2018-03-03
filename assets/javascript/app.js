@@ -109,7 +109,7 @@ $(document).ready(function () {
 
         for (var i = 0; i < topics.length; i++) {
             var gifButton = $('<button>');
-            gifButton.addClass("topic")
+            gifButton.addClass("topic btn")
             gifButton.attr("data-name", topics[i]);
             gifButton.text(topics[i]);
             $("#topics-view").append(gifButton);
