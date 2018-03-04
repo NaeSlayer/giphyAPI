@@ -61,7 +61,7 @@ $(document).ready(function () {
     function displayGifs() {
         $("#giphy-view").empty();
         var topic = $(this).attr("data-name");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + " the20%office&api_key=UAH7aljkF4fNOdraEANpxT58M8TXSJiX&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + " the20%office&api_key=UAH7aljkF4fNOdraEANpxT58M8TXSJiX&limit=10";
 
         $.ajax({
             url: queryURL,
