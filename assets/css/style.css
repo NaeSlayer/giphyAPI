@@ -7,7 +7,13 @@ body {
 .btn,
 .submit {
     border-radius: 5px;
-      box-shadow: 5px 5px 1px 0px;
+    box-shadow: 5px 5px 1px 0px;
+      
+}
+.btn:hover,
+.submit:hover {
+    border-radius: 5px;
+    box-shadow: -5px -5px 1px 0px;
 }
 
 button, 
@@ -28,3 +34,10 @@ input {
     width: 40%;
     float: left;
 }
+/* #giphy-view {
+    height: 100%;
+     background-image: url("../images/the_office.jpg");
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+} */
