@@ -18,35 +18,6 @@ $(document).ready(function () {
         image.attr("src", imageURL);
     });
 
-    // $(window).on("scroll", function () {
-    //     $.each($(".gifImage"), function (value) {
-    //         if ($(value).scrollTop() < 100) {
-    //             $(value).css("visibility", "hidden");
-
-
-    //         }
-    //         console.log(($(value).scrollTop()));
-    //     })
-    // })
-
-    // function gifHover(event) {
-    //     var image = $(event.currentTarget);
-    //     alert(image.data("animated"));
-    //     var imageURL = image.data("still");
-
-    //     switch (event.type) {
-    //         case "mouseenter":
-    //             imageURL = image.data("animated");
-    //             break;
-    //         case "mouseleave":
-    //             imageURL = image.data("still");
-    //             break;
-
-    //     }
-
-    //     image.attr("src", imageURL);
-
-    // }
     function getGifImage(source, id, dataStill, dataAnimate) {
         var gifImage = $('<img>');
         // build gifImage
@@ -77,37 +48,14 @@ $(document).ready(function () {
 
                 var giphyView = $("#giphy-view");
                 var gifImage = getGifImage(response.data[i].images.fixed_height_still.url, "gif-" + i, response.data[i].images.fixed_height_still.url, response.data[i].images.fixed_height.url)
-                // var gifDiv = $('<img>');
-                // gifDiv.addClass("gifImage");
-                // gifDiv.attr("src", response.data[i].images.fixed_height_still.url);
-                // gifDiv.attr("id", "gif-" + i)
-                // gifDiv.data('still', response.data[i].images.fixed_height_still.url);
-                // gifDiv.data('animate', response.data[i].images.fixed_height.url);
                 $(giphyView).append(gifImage);
 
                 var ratingsDiv = $("<p>");
                 ratingsDiv.text("Rating: " + response.data[i].rating);
                 $(giphyView).append(ratingsDiv);
 
-
-
-
-
-
-                // gifDiv.hover(function () {
-                //     var idx = $(this).attr("id").replace("gif-", "");
-                //     $(this).attr("src", response.data[idx].images.fixed_height.url);
-                // }, function () {
-                //     var idx = $(this).attr("id").replace("gif-", "");
-                //     $(this).attr("src", response.data[idx].images.fixed_height_still.url);
-
-                // });
             }
 
-
-            //             gifDiv.attr('data-still', response.data[i].images.fixed_height_still.url);
-            //             gifDiv.attr('data-animate', response.data[idx].images.fixed_height.url);
-            // //do the same with something like data-animate
         })
         console.log(queryURL);
 
@@ -143,24 +91,6 @@ $(document).ready(function () {
 
 
     $(document).on("click", ".topic", displayGifs);
-
-    // $("#giphy-view").hover(inFunction, outFunction);
-
-    // function inFunction() {
-    //     for (var i = 0; i < 9; i++) {
-    //         $(this).attr("src", response.data[i].images.fixed_width_small_.url);
-    //     }
-    // }
-    // function outFunction() {
-    //     for (var i = 0; i < 9; i++) {
-    //         $(this).attr("src", response.data[i].images.fixed_width_small_still.url);
-    //     }
-    // }
-
-
-
-
-
 
 
 })

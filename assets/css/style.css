@@ -3,7 +3,8 @@ body {
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
-}
+    }
+
 .btn,
 .submit {
     border-radius: 5px;

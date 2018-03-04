@@ -1,1 +1,5 @@
 # giphyAPI
+
+Welcome to The Office Giphy API!
+
+Select a character from the TV show, The Office, to load 10 gifs. Then hover over each image to play the gif. You can also add more characters by typing another character's name in teh box and clicking on submit!
